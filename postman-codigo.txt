@@ -1,0 +1,39 @@
+CÓDIGOS DO POSTMAN:
+
+GET: não tem
+
+POST:  
+{
+     "imagem" : "https://m.media-amazon.com/images/I/61nXhA+LiAL._AC_UF1000,1000_QL80_.jpg",
+      "nome" : "Bolinho duplo chocolate",
+      "descricao" : "Delicioso",
+      "quantidade" : 10,
+      "preco" : 4.99,
+      "categoria" :"alimenticio"
+}
+
+
+PUT:     
+{
+        "id": "13",
+        "imagem" : "https://m.media-amazon.com/images/I/61nXhA+LiAL._AC_UF1000,1000_QL80_.jpg",
+        "nome" : "Bolinho duplo chocolate",
+        "descricao" : "O bolinho duplo chocolate Bauducco é a combinação de uma massa fofinha com um sabor irresistível. Além de ser fonte de vitaminas, é ideal para lanches escolares, coffee breaks, cafés da manhã e quartos de hotel.",
+        "quantidade" : 11,
+        "preco" : 5.99,
+        "categoria" :"alimenticio"
+    }
+
+
+PATCH: 
+{
+    "tabela": "tbl_produtos",
+    "id": 1,
+    "preco": 12.99
+}
+
+
+DELETE: 
+{
+    "id" : 7
+}
