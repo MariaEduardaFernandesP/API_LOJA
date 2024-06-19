@@ -1,6 +1,5 @@
 CREATE DATABASE db_assai;
 USE db_assai;
-DROP TABLE Assai;
 CREATE TABLE tbl_produtos(
 id INT AUTO_INCREMENT PRIMARY KEY,
 	imagem VARCHAR(255),
@@ -25,16 +24,5 @@ INSERT INTO tbl_produtos (id, imagem, nome , descricao, quantidade, preco, categ
 ('11', 'https://static.paodeacucar.com/img/uploads/1/536/22316536.jpg', 'Sabão em Pó Tixan', 'O sabão em pó Tixan é a solução para deixar suas roupas livres de manchas e com um perfume incrível.', 10, 27.37, 'limpeza'),
 ('12', 'https://a-static.mlcdn.com.br/1500x1500/desinfetante-ype-bak-41534-eucalipto-5l/magazineluiza/225596300/fd895dcfdd0f73320d9c7789dd41b013.jpg', 'Desifetante Ypê', 'Casa limpa e protegida de bactérias e fungos não é fácil, né? Ele elimina 99,9% das bactérias e fungos.', 36, 35.99, 'limpeza');
  
--- GET
     SELECT * FROM tbl_produtos;
-    -- POST
-    INSERT INTO tbl_produtos (id, imagem, nome, descricao, quantidade, preco, categoria) VALUES
-    ('13', 'https://m.media-amazon.com/images/I/61nXhA+LiAL._AC_UF1000,1000_QL80_.jpg', 'Bolinho duplo chocolate', 'Delicioso','10','4.99', 'alimenticio');
-    -- PUT
-    UPDATE tbl_produtos
-    SET imagem = 'https://www.perdigao.com.br/assets/_images/234245a2d86f6325a0c528079543eb8979ce9144.png', nome = 'Mortadela perdigao', descricao = 'Bom', quantidade = '15', preco = '39.99', categoria = 'frios'
-    where id = 14;
-    -- DELETE
-    DELETE FROM tbl_produtos
-    WHERE id = 14;
-    ALTER TABLE tbl_produtos convert to character set utf8mb4 collate utf8mb4_general_ci;
+ 
